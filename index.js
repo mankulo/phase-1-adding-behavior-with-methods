@@ -32,16 +32,16 @@ class Bird {
         this.sex = sex;
     }
     speak() {
-        if (this.sex === 'Female') {
-            return `It's me! ${this.name}, the parrot!`
-        }
-        else {
-            return `${this.name} says squawk!`
+        if (this.sex === 'Male') {
+            return `It's me! ${this.name}, the parrot!`;
+        } else if (this.sex === 'Female') {
+            return `${this.name} says squawk!`;
         }
     }
-    
 }
-let Bird2 = new Bird('Pablo', 'Male');
+
+let bird = new Bird('Pablo', 'Male');
+let bird2 = new Bird('Mable', 'Female');
 
 
 
